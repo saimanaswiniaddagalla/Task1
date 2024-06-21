@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        .main{
+           
+            font-family: Inter;
+            padding: 0;
+            margin: 0;
+            color: #838383
+        }
+        h2,h3{
+            color: black;
+        }
+        nav ul li{
+            display: inline;
+            margin: 5px;
+        }
+        nav ul{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            gap: 50px;
+            
+            
+        }
+        .panel{
+            border: solid;
+            border-color: #969393
+        }
+        #panel1{
+            width: 400px;
+            /* overflow: hidden; */
+            height: 100vh;
+            position: relative;
+        }
+        #leftarrow{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+        }
+        .main-list{
+            margin-top: 50px;
+            list-style-type: none;
+            padding: 10px;
+        }
+        .main-list li{
+            margin-bottom: 10px;
+        }
+        .nested-list{
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        .nested-list li{
+            margin-bottom: 10px;
+        }
+        #panel2{
+            width: 750px;
+            overflow: scroll;
+            padding-left: 20px;
+            position: relative;
+        }
+        #uparrow{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 90%;
+            height: auto;
+        }
+        #head{
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+        .option{
+            list-style: none;
+            padding: 15px;
+        }
+        .pro{
+            /* width: 97%; */
+            margin-right: 100px;
+        }
+        
+        #easy{
+            color: #30c223
+        }
+        
+        
+        #h2head{
+            text-align: center;
+        }
+       
+        #proimg{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="main"> 
+        <div id="head">
+        <div class="pro">
+        <h2>HTML/CSS Practice Task</h2>
+        <nav>
+        <ul>
+            <li><a>File</a></li>
+            <li><a>Edit</a></li>
+            <li><a>View</a></li>
+            <li><a>Insert</a></li>
+            <li><a>Format</a></li>
+        </ul>
+        </nav>
+        </div>
+        <div id="proimg">
+            <img src="profile.png" alt="Profile"/>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+    <div class="panel" id="panel1">
+        <img id="leftarrow" src="leftarrow.png" alt="leftarrow" width="30px">
+        <ul class="main-list">
+            <li class="list">Introduction
+                <ul class="nested-list">
+                    <li>Learning Goal</li>
+                    <li>Effort</li>
+                    <li>Difficulty</li>
+                </ul>
+            </li>
+            <li>Problem Statement</li>
+            <li> Scope</li>
+        </ul>
+    </div>
+    <div class="panel" id="panel2"> 
+        <div class="pro2">
+        <h2 id="h2head">HTML/CSS Practice Task</h2>
+        <h3>Introduction</h3>
+        <p>This is a basic HTML/CSS Practice Task.Complete the task with care</p>
+        <h3>Learning Goal</h3>
+        <ul class="p">
+            <li>Basic HTML</li>
+            <li>Basic CSS</li>
+        </ul>
+        <h3>Effort</h3>
+        <p>The task can be completed in 1hr</p>
+        <h3>Difficulty</h3>
+        <p>This is an <span id="easy">EASY</span> task</p>
+        <h3>Problem Statement</h3>
+        <p>Complete the task with the matching layout as given in design.</p>
+        <h3>Scope</h3>
+        <ul class="p">
+            <li>Build the following image using HTML and CSS</li>
+            <li>Match the color/spacing/font/size as close as possible to the image </li>
+            <li>Download svg and use it for icons</li>
+            <li>The document content should have a seperate scrollbar when the entered content is huge</li>
+            <li>The design should be similar on different screen sizes</li>
+        </ul>
+        </div>
+        <div id="uparrow">
+            <img src="up arrow.png" alt="uparrow" />
+        </div>
+        
+    </div>
+
+    </div>
+    
+    </div>
+    
+</body>
+</html>
